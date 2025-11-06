@@ -1,7 +1,9 @@
 from google.adk.agents import LlmAgent
+from google.adk.tools.load_artifacts_tool import load_artifacts_tool
 
-from config import AGENT_MODEL
-from prompt import SOCIAL_MEDIA_AGENT_PROMPT
+from abc_hackathon_agent_hands_on.config import AGENT_MODEL
+from abc_hackathon_agent_hands_on.prompt import SOCIAL_MEDIA_AGENT_PROMPT
+from abc_hackathon_agent_hands_on.tools.image_tools import edit_image, generate_image, generate_video
 
 root_agent = LlmAgent(
     name="root_agent",
